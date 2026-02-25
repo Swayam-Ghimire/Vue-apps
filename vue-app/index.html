@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vue Task App</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <h1>{{ title }}</h1>
+
+    <!-- Two-way binding -->
+    <input type="text" v-model="newTask" placeholder="Enter task">
+    <button @click="addTask">Add Task</button>
+
+    <!-- Conditional rendering -->
+    <p v-if="tasks.length === 0">No tasks available</p>
+
+    <!-- Looping -->
+    <ul>
+        <li v-for="(task, index) in tasks" :key="index">
+            
+            <!-- Dynamic class binding -->
+            <span 
+                :style="{ textDecoration: task.completed ? 'line-through' : 'none' }">
+                {{ task.name }}
+            </span>
+
+            <button @click="toggleTask(index)">
+                {{ task.completed ? 'Undo' : 'Complete' }}
+            </button>
+
+            <button @click="removeTask(index)">Delete</button>
+        </li>
+    </ul>
+
+    <!-- v-show example -->
+    <p v-show="tasks.length > 0">
+        Total Tasks: {{ tasks.length }}
+    </p>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
