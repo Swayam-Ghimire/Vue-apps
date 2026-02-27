@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ heading }}</h1>
+      <form @submit.prevent="addTask">
+        <input type="text" v-model="newTask" placeholder="Enter task" />
+        <button type="submit">Add Task</button>
+      </form>
+      <div v-if="totalTasks > 0">
+        <task-item
+          v-for="task in tasks"
+          :key="task.id"
+          :task="task"
+          @edit-task="editTask"
+          @delete-task="deleteTask"
+        ></task-item>
+      </div>
+      <p>Total tasks: {{ totalTasks }}</p>
+    </div>
+    <script src="task-item.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
