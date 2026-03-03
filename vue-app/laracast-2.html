@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: grid;
+        place-items: center;
+      }
+      .background-green {
+        background-color: green;
+      }
+
+      .background-red {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <button type="button" :class="active ? 'background-red' : 'background-green'" @click="toggle">Click Me</button>
+    </div>
+    <script>
+      Vue.createApp({
+        data() {
+          return {
+            active: false
+          };
+        },
+        methods: {
+            toggle() {
+                this.active = !this.active;
+            }
+        }
+      }).mount('#app');
+    </script>
+  </body>
+</html>
