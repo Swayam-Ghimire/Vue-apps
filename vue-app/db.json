@@ -1,0 +1,94 @@
+{
+  "assignments": [
+    {
+      "id": 1,
+      "name": "Finished Project",
+      "complete": false,
+      "tag": "math"
+    },
+    {
+      "id": 2,
+      "name": "Read Chapter 4",
+      "complete": false,
+      "tag": "science"
+    },
+    {
+      "id": 3,
+      "name": "Turn in Homework",
+      "complete": false,
+      "tag": "math"
+    },
+    {
+      "id": 4,
+      "name": "Prepare Lab Report",
+      "complete": true,
+      "tag": "science"
+    },
+    {
+      "id": 5,
+      "name": "Practice Algebra Problems",
+      "complete": false,
+      "tag": "math"
+    },
+    {
+      "id": 6,
+      "name": "Group Discussion Notes",
+      "complete": true,
+      "tag": "english"
+    },
+    {
+      "id": 7,
+      "name": "Write Essay Draft",
+      "complete": false,
+      "tag": "english"
+    },
+    {
+      "id": 8,
+      "name": "Physics Numericals",
+      "complete": true,
+      "tag": "science"
+    },
+    {
+      "id": 9,
+      "name": "Geometry Worksheet",
+      "complete": false,
+      "tag": "math"
+    },
+    {
+      "id": 10,
+      "name": "Biology Diagram Practice",
+      "complete": true,
+      "tag": "science"
+    },
+    {
+      "id": 11,
+      "name": "Read Novel Chapters",
+      "complete": false,
+      "tag": "english"
+    },
+    {
+      "id": 12,
+      "name": "Chemistry Formula Revision",
+      "complete": false,
+      "tag": "science"
+    },
+    {
+      "id": 13,
+      "name": "Math Quiz Preparation",
+      "complete": true,
+      "tag": "math"
+    },
+    {
+      "id": 14,
+      "name": "Grammar Exercises",
+      "complete": false,
+      "tag": "english"
+    },
+    {
+      "id": 15,
+      "name": "Statistics Practice Set",
+      "complete": true,
+      "tag": "math"
+    }
+  ]
+}
