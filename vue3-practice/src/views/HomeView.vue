@@ -5,5 +5,7 @@ import TheWelcome from '../components/TheWelcome.vue'
 <template>
   <main>
     <TheWelcome />
+    <!-- nested routes will render here -->
+    <router-view />
   </main>
 </template>
