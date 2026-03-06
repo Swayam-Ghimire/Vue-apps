@@ -16,13 +16,14 @@ import HelloWorld from './components/HelloWorld.vue'
         <!-- use the exact route names defined in router/index.js -->
         <RouterLink :to="{ name: 'Count' }">Count</RouterLink>
         <RouterLink :to="{ name: 'Settings' }">Settings</RouterLink>
+        <RouterLink to="/tasks">Tasks</RouterLink>
       </nav>
     </div>
   </header>
 
   <!-- main router outlet rendered below header -->
   <main>
-    <router-view />
+    <RouterView />
   </main> 
 </template>
 

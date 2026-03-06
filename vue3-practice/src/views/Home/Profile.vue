@@ -16,7 +16,7 @@
 </script>
 
 <template>
-  <button @click="store.commit('increment')">Increase</button>
-  <p>{{ store.state.count }}</p>
-  <p>{{ store.state.double }}</p>
+  <button @click="this.count++">Increase</button>
+  <p>{{ count }}</p>
+  <p>{{ double }}</p>
 </template>

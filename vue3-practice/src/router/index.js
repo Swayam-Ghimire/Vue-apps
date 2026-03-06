@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import TasksView from '../views/Tasks.vue'
 import ContactView from '../views/ContactView.vue'
 import Profile from '../views/Home/Profile.vue'
 import Settings from '../views/Home/Settings.vue'
@@ -15,6 +16,11 @@ const routes = [
       { path: 'profile', name: 'Count', component: Profile },
       { path: 'settings', name: 'Settings', component: Settings },
     ],
+  },
+  {
+    path: '/tasks',
+    name: 'tasks',
+    component: TasksView,
   },
   {
     path: '/contact',
