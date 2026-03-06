@@ -1,11 +1,12 @@
 <script setup>
 import TheWelcome from '../components/TheWelcome.vue'
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
   <main>
-    <TheWelcome />
-    <!-- nested routes will render here -->
-    <router-view />
+    <!-- <TheWelcome /> -->
+     Hello world this is home page
+     <RouterView/>
   </main>
 </template>

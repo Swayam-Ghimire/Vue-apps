@@ -1,7 +1,8 @@
 <template>
   <div class="item">
     <i>
-      <slot name="icon"></slot>
+      <slot name="icon"></slot> 
+      <!-- here component is rendered -->
     </i>
     <div class="details">
       <h3>

@@ -12,7 +12,7 @@ const routes = [
     // child paths must be relative (no leading slash) and the parent
     // component needs a <router-view> to render them.
     children: [
-      { path: 'profile', name: 'Profile', component: Profile },
+      { path: 'profile', name: 'Count', component: Profile },
       { path: 'settings', name: 'Settings', component: Settings },
     ],
   },

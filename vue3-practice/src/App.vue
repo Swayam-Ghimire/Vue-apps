@@ -5,7 +5,6 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -15,7 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
         <!-- use the exact route names defined in router/index.js -->
-        <RouterLink :to="{ name: 'Profile' }">Profile</RouterLink>
+        <RouterLink :to="{ name: 'Count' }">Count</RouterLink>
         <RouterLink :to="{ name: 'Settings' }">Settings</RouterLink>
       </nav>
     </div>
@@ -24,7 +23,7 @@ import HelloWorld from './components/HelloWorld.vue'
   <!-- main router outlet rendered below header -->
   <main>
     <router-view />
-  </main>
+  </main> 
 </template>
 
 <style scoped>
