@@ -43,6 +43,7 @@ export default {
         <ul class="border border-gray-600 divide-y divide-gray-600 mt-5">
         <assignment v-for="assignment in filteredAssignments" :key="assignment.id" :assignment='assignment' ></assignment>
         </ul>
+        <slot />
       </section>
     `
 

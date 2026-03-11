@@ -41,10 +41,11 @@ export default {
     "assignment-create": AssignmentCreate,
   },
   template: `
-        <assignment-list :assignments= 'inProgress' title='In Progress'></assignment-list>
+        <section class='flex gap-8'> 
+        <assignment-list :assignments= 'inProgress' title='In Progress'><assignment-create @add='add'></assignment-create></assignment-list>
         <assignment-list :assignments= 'isCompleted' title='Completed'></assignment-list>
-
-        <assignment-create @add='add'></assignment-create>
+        </section>
+        
         
     `,
 };

@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "npx serve -p 5000 & bun json-server db.json -p 3001 "
+  },
   "dependencies": {
     "json-server": "^1.0.0-beta.12"
   }
